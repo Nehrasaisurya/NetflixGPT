@@ -1,0 +1,56 @@
+body{
+    background-color: #000;
+}
+#Login{
+    background-image: url("../public/netflixbg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.overlay{
+    position: relative;
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.463);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.clip{
+    clip-path: polygon(0% 10%, 33% 10%, 78% 10%, 85% 0, 91% 10%, 100% 10%, 100% 100%, 0% 100%);
+
+}
+
+.textContent{
+    position: absolute;
+    z-index: 10;
+    bottom: -100%;
+    transition: 0.3s;
+    width: 200px;
+}
+.content:hover .textContent{
+    bottom: 70px;
+    width: 280px;
+}
+.content{
+    transition: 0.3s;
+}
+
+.content:hover{
+    width: 280px;
+    
+}
+
+
+
+  
+
+
+  
